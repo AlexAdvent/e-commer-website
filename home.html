@@ -1,27 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Required meta tags -->
 <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <!-- Bootstrap CSS -->
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
- <!-- jQuery first, then Tether, then Bootstrap JS. -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
    <!--google font-->
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 
-
-
-
-   <style>
+ <style>
        #tcon1t{
    padding-top:10px;
 }
@@ -65,10 +55,6 @@
 }.card-title{
     font-weight:600;
 }
-
-
-
-
      #tcon1t{
    padding-top:10px;
 }
@@ -117,7 +103,6 @@
 }img{
     margin-top:10px;
     height:200px;
-
 }
 ul{
     margin:0px;
@@ -130,7 +115,6 @@ ul{
 .col-6{
     padding:5px;
 }
-
 
 /*menu*/
 .sidenav {
@@ -145,7 +129,6 @@ ul{
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -199,35 +182,21 @@ ul{
     margin-top:20px;
     margin-top:20pz;
 }
-
-
-
-
-
-
-
-
    </style>
  </head>
 
  <body>
 
-
-
-<!--side menu-->
+ <!--side menu-->
 
  <div id="mdull" onclick="closeNav()"></div>
         <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
  <div class="d-flex justify-content-center" style="display:block;">
            <i class="fa fa-user-circle-o fa-5x"></i>
      </div>
       <div class="d-flex justify-content-center" style="display:block;">
-
         <a href="/login"> please login</a>
-
       </div>
       <hr>
   <a href="/addsell"> <spam class="fa fa-camera"></spam>Start Selling</a>
@@ -236,9 +205,6 @@ ul{
   <a href="/contactUs"><spam class="fa fa-phone"></spam>Contact Us</a>
    <a href="#"><spam class="fa fa-pencil-square-o"></spam>Feedback</a>
            <div style="margin-top:30px; width:100%;text-align:center;">
-
-
-
  <a href="/login" >  <div style="width:90%; margin-left:5%; padding-top:10px;padding-bottom:10px" class="bg-primary">
            Login
            </div></a>
@@ -246,33 +212,18 @@ ul{
            >
            Signup
            </div></a>
-
-
      </div>
 </div>
-
-
-
-
-
-
-
-
-
  <div style="background-color:#eee" id="title" class="fixe-top">
    <div class="container-fluid h4" id="tcont">
     <div class="fa fa-bars d-inline" onclick=openNav()></div>
     <div class="d-inline" id="mhead">Sellit</div>
     <div class="d-inline tlbtn lead float-right">
-
-
             <a href="/login">login</a>
-
 
     </div>
 </div>
  <div id="tsk">
-
         <input type="text" id="inputPassword2" placeholder="search items here">
         <spam class="fa fa-search btn-primary" id="tsb"></spam>
 </div>
@@ -344,11 +295,6 @@ ul{
      <spam style="padding-left:10px;"> pune</spam>
     </div>
     </div>
-
-
-
-
-
  <div class="col-6">
  <div class="card">
    <a href="book/5f143cbc7d8629048cb40fce">
@@ -365,12 +311,6 @@ ul{
        </a>
        </div>
      </div>
-
-
-
-
-
-
  <div class="col-6">
  <div class="card">
    <a href="book/5f143ef97d8629048cb40fcf">
@@ -387,12 +327,6 @@ ul{
        </a>
        </div>
      </div>
-
-
-
-
-
-
  <div class="col-6">
  <div class="card">
    <a href="book/5f33e925748c240004f7ab4f">
@@ -409,28 +343,21 @@ ul{
        </a>
        </div>
      </div>
-
-
-
-
-
-
-
     </div>
  <script>
-
+// Function TO Open Nav
  function openNav() {
   document.getElementById("mdull").style.width = "100%";
   document.getElementById("mySidenav").style.width = "70%";
   disableScrolling()
 }
-
+// Function TO Close Nav
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
    document.getElementById("mdull").style.width = "0";
    enableScrolling()
 }
-
+// Function To Disable Scrolling
    function disableScrolling(){ var x=window.scrollX; var y=window.scrollY; window.onscroll=function(){window.scrollTo(x, y);}; } function enableScrolling(){ window.onscroll=function(){}; }
     </script>
   </body>
