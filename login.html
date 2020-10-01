@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS --> 
+ 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+            
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->  
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+      .container-fluid {
+    padding:7% 5%;
+    text-align:center;
+}body{
+    background-color:white;
+}
+a{
+    padding-top:0px;
+}
+  </style>
+    </head>
+    <body>
+    
+<div id="lslider" class="carousel slide" data-ride="carousel"> 
+ <ol class="carousel-indicators">
+     <li data-target="#lslider" data-slide-to="0" class="active" style="color:red;"></li>
+      <li data-target="#lslider" data-slide-to="1" class="active fa fa-circle"></li>
+ </ol>
+<div class="carousel-inner">
+ <div class="carousel-item active container-fluid">
+    <i class="fa fa-home fa-5x" style="font-size:100px;"></i>
+  <div style="margin-top:10px;">Store all your data one place</div> 
+   </div> 
+   
+   <div class="carousel-item container-fluid">
+    <i class="fa fa-handshake-o
+
+ fa-5x" style="font-size:100px;"></i>
+  <div style="margin-top:10px;">Close your all deals faster</div> 
+   </div> 
+</div> 
+      <a class="carousel-control-prev" href="#lslider" role="button" data-slide="prev">
+       <span class="fa fa-chevron-left" aria-hidden="true" style="color:black;">
+   <span class="sr-only">Previous</span> </a>
+   <a class="carousel-control-next" href="#lslider" role="button" data-slide="next"> 
+<span class="fa fa-chevron-right" aria-hidden="true" style="color:black;">
+     </span> 
+ <span class="sr-only">Next</span> 
+ </a>
+  </div>
+  <div style="margin-left:5%;margin-right:5%;">
+
+
+  
+<form method="post" action="/login"> 
+   
+     
+       
+       
+ <div class="form-group"> 
+   <label for="exampleInputEmail1">Email address</label>
+   <input type="text" name="phEm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email or phone number" required/>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small> 
+ </div>
+ <div class="form-group"> 
+   <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required/>
+ </div>
+ <button type="submit" class="btn btn-primary" style="width:100%; ">Submit</button>
+</form>
+<div style="text-align:center;margin-top:10px;">
+don't have an account?
+  <a href="signup">
+   <span class="color-primary">Sign up</span>
+  </a>
+  </div>
+   </div>
+   
+<script>
+    $(function(){
+        $('.carousel').carousel({
+            interval:2000
+        })
+    })
+</script>
+
+    </body>
+</html>
