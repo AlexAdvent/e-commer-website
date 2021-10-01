@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Login/Registration Form</title>
+        <style>
+            body,html {
+                display: grid;
+                height: 100%;
+                width: 100%;
+                place-items: center;
+                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                height: 100vh;
+            }
+
+                @keyframes gradient {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+            .form{
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+            }
+            .formbox{
+                width: 380px;
+                height: 480px;
+                position: relative;
+                margin: 6% auto;
+                background: lightblue;
+                padding: 5px;
+                overflow: hidden;
+            }
+            .buttonbox{
+                width: 220px;
+                margin: 35px auto;
+                position: relative;
+            }
+            .button{
+                padding: 10px 30px;
+                cursor: pointer;
+                background: content-box;
+                border: 0;
+                outline: none;
+                position: relative;
+            }
+            .inputform{
+                top: 250px;
+                left: 440px;
+                position: absolute;
+                width: 280px;
+                transition: .5s;
+            }
+            .inputfield{
+                width: 100%;
+                padding: 8px 0;
+                margin: 10px 0;
+                border-bottom: 1px solic #999;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                outline: none;
+                background: transparent ;
+                margin: 5px;
+                margin-left: 50px;
+           } 
+            .p{
+              text-emphasis-color: white;
+            }
+            .submit{
+                margin: 30px;
+                margin-left: 150px;
+            }
+        </style>
+    </head>
+    <body>
+       
+            <div class="formbox" style="border-radius: 20px;">
+                <div class="buttonbox">
+                   
+                    
+                    <button type="button" class="button"><h1><b><center>Register</center></b></h1></button>
+                </div>
+                
+            </div>
+                <form class="inputform" id="register" action="RegisterUser.php" method="POST"> 
+                    <input type="text" name="textuser" class="inputfield" placeholder="User ID" required> 
+                    <input type="text" class="inputfield" name="textemail" placeholder="E-mail ID" required> 
+                    <input type="password" class="inputfield" name="password" placeholder="Enter Password" required> 
+                    <input type="submit" name="submit" class="submit" value="Register">
+                    <p> If alreay a user?
+                
+                    <button type="button" class="button"><a href="Login.html">Log-IN</a></button>
+                        </p>
+                </form> 
+            </div>
+             
+      
+        
+    </body>
+</html>
