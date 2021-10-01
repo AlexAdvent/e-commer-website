@@ -7,4 +7,4 @@
         function closeNav() {
           document.getElementById("mySidenav").style.transition = "2.0s";
           document.getElementById("mySidenav").style.left = "-100%";
-            }
+        }
