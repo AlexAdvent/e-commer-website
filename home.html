@@ -12,6 +12,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
 
  <style>
+  @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+  }
        #tcon1t{
    padding-top:10px;
 }
@@ -32,7 +36,7 @@
   width:35px;
   margin-right:5%;
 }#mhead{
-    font-family: 'Roboto Slab', serif;
+    font-family: myFirstFont;
     margin-left:4%;
 }.tlbtn{
     margin-top:5px;
@@ -100,6 +104,7 @@
 
 }.card-title{
     font-weight:600;
+    font-family: myFirstFont;
 }img{
     margin-top:10px;
     height:200px;
@@ -129,7 +134,7 @@ ul{
   display: block;
   transition: 0.3s;
   font-size:17px;
-}a spam{
+}a span{
     margin-right:20px;
 }
 
@@ -191,11 +196,11 @@ ul{
         <a href="/login"> please login</a>
       </div>
       <hr>
-  <a href="/addsell"> <spam class="fa fa-camera"></spam>Start Selling</a>
-  <a href="/mysell"><spam class="fa fa-picture-o"></spam>My Ads</a>
-  <a href="/mychat"><spam class="fa fa-comment-o"></spam>My Chat</a>
-  <a href="/contactUs"><spam class="fa fa-phone"></spam>Contact Us</a>
-   <a href="#"><spam class="fa fa-pencil-square-o"></spam>Feedback</a>
+  <a href="/addsell"> <span class="fa fa-camera"></span>Start Selling</a>
+  <a href="/mysell"><span class="fa fa-picture-o"></span>My Ads</a>
+  <a href="/mychat"><span class="fa fa-comment-o"></span>My Chat</a>
+  <a href="/contactUs"><span class="fa fa-phone"></span>Contact Us</a>
+   <a href="#"><span class="fa fa-pencil-square-o"></span>Feedback</a>
            <div style="margin-top:30px; width:100%;text-align:center;">
  <a href="/login" >  <div style="width:90%; margin-left:5%; padding-top:10px;padding-bottom:10px" class="bg-primary">
            Login
@@ -217,11 +222,11 @@ ul{
 </div>
  <div id="tsk">
         <input type="text" id="inputPassword2" placeholder="search items here">
-        <spam class="fa fa-search btn-primary" id="tsb"></spam>
+        <span class="fa fa-search btn-primary" id="tsb"></span>
 </div>
 
 <div class="container-fluid sh">
-<spam>popular category</spam>
+<span>popular category</span>
 <div id="SeA" class="float-right">SEE ALL</div>
 </div>
 <div class="container-fluid">
@@ -257,7 +262,7 @@ ul{
    <span style="padding-left:10px;"> pune</span>
     </div>
     </div>
-     <div class="col-6" style="padding-left=0px">
+     <div class="col-6" style="padding-left:0px">
 <div class="card">
 <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
  <div class="card-body">
