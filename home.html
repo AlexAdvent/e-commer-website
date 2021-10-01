@@ -10,6 +10,9 @@
 
    <!--google font-->
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" >
+<link rel="stylesheet" href="sidebar.css" />
 
  <style>
   @font-face {
@@ -224,6 +227,16 @@ ul{
         <input type="text" id="inputPassword2" placeholder="search items here">
         <span class="fa fa-search btn-primary" id="tsb"></span>
 </div>
+    
+    <div class="sidebar">
+   <ul class="sidebar-items">
+     <li class="item">Sidebar item 1</li>
+     <li class="item">Sidebar item 2</li>
+     <li class="item">Sidebar item 3</li>
+     <li class="item">Sidebar item 4</li>
+     <li class="item">Sidebar item 5</li>
+   </ul>
+ </div>
 
 <div class="container-fluid sh">
 <span>popular category</span>
@@ -542,5 +555,6 @@ function closeNav() {
 // Function To Disable Scrolling
    function disableScrolling(){ var x=window.scrollX; var y=window.scrollY; window.onscroll=function(){window.scrollTo(x, y);}; } function enableScrolling(){ window.onscroll=function(){}; }
     </script>
+   <script src="main.js"></script>
   </body>
   </html>
