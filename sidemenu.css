@@ -1,0 +1,86 @@
+/*menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: -100%;
+    width: 30%;
+
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 20px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 25px;
+    color: black;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  a span {
+    margin-right: 20px;
+  }
+
+  .sidenav a:hover {
+    color: grey;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .side-btns{
+    margin-top:30px; 
+    width: 100%;
+    display: flex;
+  }
+
+  .side-btns button{
+    border-radius: 30px; 
+    background-color: #0e8ce4; 
+    color: white;
+    border: none;
+  }
+  .side-btns button:hover{
+    background-color: hsl(205, 89%, 50%);
+    color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sidenav {
+      padding-top: 15px;
+      width: 50%;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  .fa-user-circle-o {
+    color: grey;
+  }
+
+  body {
+    overflow: hidden;
+    overflow: scroll;
+  }
+  .side-btns {
+    flex-direction: column;
+  }
+
+#mlogin {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: red;
+    margin-top: 20px;
+    margin-top: 20px;
+  }  
+}  
