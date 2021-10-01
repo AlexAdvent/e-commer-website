@@ -1,0 +1,143 @@
+/*                       Hello! Welcome
+				Made By : Harikrushn Kanani;
+                                                                        */
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background:url(wave.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.box
+{
+	width: 400px;
+	position: absolute;
+	top:50%;
+	left: 65%;
+	transform: translate(-50%,-50%);
+	background:#fff;
+	padding: 40px;
+	box-sizing: border-box;
+	border:2px solid rgba(0,0,0,.1);
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.box h2
+{
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	/*margin:0 0 40px;
+	padding: 0;*/
+	color:#f7497d;
+	text-transform: uppercase;
+}
+.box input
+{
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+.box textarea
+{
+	height: 80px;
+	padding: 10px 0;
+	margin-bottom: 40px;
+}
+.box input,
+.box textarea
+{
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;
+}
+.box textarea
+{
+	margin-bottom: 20px;
+	max-width: 100%;
+}
+.box input[type="submit"]
+{
+	background-color: #f7497d;
+	border-bottom: none;
+	cursor: pointer;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.box form div
+{
+	position: relative;
+}
+.box form div label
+{
+	position: absolute;
+	top:10px;
+	left: 0;
+	pointer-events: none;
+	transition: .5s;
+	color:#999;
+}
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label
+{
+	top:-20px;
+	left: 0;
+	color:#f7497d;
+	font-size: 16px;
+}
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid
+{
+	border-bottom: 2px solid #f7497d;
+}
+.box .img img
+{
+	margin-top: -1%;
+	margin-left: 34%;
+	left:100px;
+	height: 100px;
+	
+}
+.image img
+{
+	height: 500px;
+	width:500px;
+	display: flex;
+	margin-left: 10%;
+	margin-top: 8%;
+}
+.btn
+{
+
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border:none;
+	background-image: linear-gradient(to right, #f7497d, #32be8f, #38d39f, #f7497d);
+	background-size: 200%;
+	border-bottom: none;
+	font-size: 1.2rem;
+	color: #000;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn:hover{
+	background-position: right;
+}
+
+input:invalid {
+	border-color: rgb(255, 0, 43);
+  }
