@@ -1,4 +1,5 @@
 <img src="assets\sellit.jpg" align="center"><hr>
+
 <div align="center"><h1>Sellit</h1></div>
 <div align="center">
 	
@@ -14,7 +15,8 @@
 <a href="https://github.com/AlexAdvent/e-commer-website/issues"><img src="https://img.shields.io/github/issues/AlexAdvent/e-commer-website?color=0059b3"></a>
 <a href="https://github.com/AlexAdvent/e-commer-website/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/AlexAdvent/e-commer-website?color=yellow"></a>
 <a href="https://github.com/AlexAdvent/e-commer-website/pulls"><img src="https://img.shields.io/github/issues-pr/AlexAdvent/e-commer-website?color=brightgreen"></a>
-<a href="https://github.com/AlexAdvent/e-commer-website/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/AlexAdvent/e-commer-website?color=0059b3"></a> 
+<a href="https://github.com/AlexAdvent/e-commer-website/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/AlexAdvent/e-commer-website?color=0059b3"></a>
+
 </div>
 
 <p>
@@ -37,7 +39,6 @@ The Sellit is an E-commerce Website for the students to sell the Notes, Books , 
 <p align="center">
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>  <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 
-
 <h2 >Contributions :</h2>
 
 <p >
@@ -50,11 +51,8 @@ We welcome developers to contribute to our project. Their efforts will be suppor
 <ol >
 <li>If you like our Initiative drop a ⭐</li>
 <li>Have a look <a href="https://github.com/AlexAdvent/e-commer-website">here</a>.</li>
-<li>Read  <a href="">Contributing Guidelines</a>.</li>
+<li>Read <a href="https://github.com/AlexAdvent/e-commer-website/blob/master/CONTRIBUTING.md">Contributing Guidelines</a>.</li>
 </ol>
-
-
-
 
 <hr>
 
@@ -72,4 +70,3 @@ We welcome developers to contribute to our project. Their efforts will be suppor
 </table>
 <hr>
 <h1 align="center">Made With 💖 By Harshit Jain</h1>
-
