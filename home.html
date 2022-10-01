@@ -1553,6 +1553,10 @@
       initCustomDropdown();
       initPageMenu();
 
+      // set current year
+      const yearElement = $('span#currentYear')
+      yearElement?.text(new Date().getFullYear())
+
       function setHeader() {
 
         if (window.innerWidth > 991 && menuActive) {
@@ -2202,7 +2206,7 @@
       </div>
     </div>
     <div class="bottom">
-      <p>Copyright © 2021 <a href="#">Sellit</a> All rights reserved</p>
+      <p>Copyright © <span id="currentYear"></span> <a href="#">Sellit</a> All rights reserved</p>
     </div>
   </footer>
   <style>
