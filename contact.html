@@ -90,16 +90,16 @@ body
 	color:#999;
 	
 }
-.box input:focus ~ label,
-.box textarea:focus ~ label,
-.box input:valid ~ label,
-.box textarea:valid ~ label
+
+/* CHANGE HERE */
+.handle-label
 {
-	top:-20px;
-	left: 0;
+	top:-20px !important;	
+	left: 0 !important;
 	color:#f7497d;
 	font-size: 16px;
 }
+
 .box input:focus,
 .box textarea:focus,
 .box input:valid,
@@ -151,6 +151,10 @@ input:invalid {
 	border-color: rgb(255, 0, 43);
   }
 </style>
+
+
+<!-- GIVE ID'S TO LABEL AND CALLED FUNCTION onfocus AT INPUTS -->
+
 <body>
 	<div class="image">
 		<img src="Contact Us/bg.svg">
@@ -161,22 +165,22 @@ input:invalid {
 		</div>
 		<h2>Contact Us</h2>
 		<form>
-		   <div class = container>
+		   <div class='container'>
 			<div>
-				<input type="text" name="" required="" >
-				<label>Your lovely name</label>
+				<input onfocus="nameFocus()" type="text" name="" required="" >
+				<label id="name">Your lovely name</label>
 			</div>
 			<div>
-				<input type="email" name="" required="">
-				<label>Your Email</label>
+				<input onfocus="emailFocus()" type="email" name="" required="">
+				<label id="email">Your Email</label>
 			</div>
 			<div>
-				<input type="text" name="" required="">
-				<label>Subject</label>
+				<input onfocus="subjectFocus()" type="text" name="" required="">
+				<label id="subject">Subject</label>
 			</div>
 			<div>
-				<textarea required=""></textarea>
-				<label>Mesasge</label>
+				<textarea onfocus="messageFocus()" required=""></textarea>
+				<label id="message">Mesasge</label>
 			</div>
 			<!-- <a href="#">Submit</a> -->
 			<input type="submit" name="" value="submit" class="btn">
@@ -184,4 +188,5 @@ input:invalid {
 		</form>
 	</div>
 </body>
+<script src="contact.js"></script>
 </html>
