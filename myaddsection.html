@@ -11,125 +11,47 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <style>
-        .card-img-top {
-            width: 70%;
-        }
-        
-        .card-title {
-            font-weight: 600;
-        }card-title {
-            font-weight: 600;
-        }
-        
-        .col-6 {
-            padding: 1px;
-        }
-        
-        #title {
-            padding-top: 25px;
-            padding-bottom: 25px;
-            padding-left: 30px;
-            font-size: 20px;
-            background-color: #f2f2f2;
-            margin-bottom: 40px;
-        }
-        
-        body {
-            background-color: white;
-        }
-        
-        .card {
-            margin-bottom: 10px;
-            margin-top: 10px;
-            width: 95%;
-            margin-left: 2.5%;
-        }
-        
-        img {
-            margin-top: 10px;
-            height: 200px;
-        }
-        
-        #title i {
-            margin-right: 25px;
-        }
-    </style>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div id="title">
+    <div id="title" class="py-6 text-title-3 px-3 bg-gray-200">
         <a href="/">
             <i class="fa fa-arrow-left"></i>
         </a>
-        <spam>All your Add</spam>
+        <span>All your Add</span>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="card">
-                    <div class="card-header"> Book
-
-
-
-
-
-
-                    </div>
-
-                    <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
-                    <div class="card-body">
-                        <!--  <h5 class="card-title">Errorless</h5>
-  </div>  -->
-                        <div class="card-title">
-                            <h5>HC Verma</h5>
-                            <div><i class="fa fa-inr"> 300</i></div>
-                        </div>
-
-                    </div>
-                    <spam style="padding-left:10px;" class="text-muted"> pune</spam>
-                </div>
-            </div>
-
-
-
-
-            <div class="col-6" style="padding-left: 0px">
-                <div class="card">
-                    <div class="card-header"> Book
-
-
-
-                    </div>
-                    <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
-                    <div class="card-body">
-                        <!--  <h5 class="card-title">Errorless</h5>
-  </div>  -->
-                        <div class="card-title">
-                            <h5>Errorleffdfdss</h5>
-                            <div><i class="fa fa-inr"> 50</i></div>
-                        </div>
-
-                    </div>
-                    <spam style="padding-left: 10px;" class="text-muted"> pune</spam>
-                </div>
-            </div>
-
-
-        </div>
-
+    <div class="w-full">
+        <div id="card-holder" class="w-full items-center p-4 flex md:flex-row flex-col flex-wrap gap-5"></div>
+    </div>
+        
 
 
         <script>
-            $(function() {
-                $('.carousel').carousel({
-                    interval: 2000
-                })
-            })
+        function BasicCard(){
+            return(
+                `
+                    <div class=" border-b border col-span-1 w-fit pb-3">
+                        <div class="font-semibold bg-gray-200 px-3 py-2">Book</div>
+                        <img class="border border-1" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+                        <div class="p-3 flex w-full justify-between">
+                            <h5>HC Verma</h5>
+                            <i class="fa fa-inr"> 300</i>
+                        </div>
+                        <span class="px-3">Pune</spam>
+                    </div>
+                `
+            )
+        }    
+        let finalPlaceHolder = ""
+        for(i=0;i<10;i++){
+            finalPlaceHolder = BasicCard() + "\n" + finalPlaceHolder;
+        }
+        document.getElementById("card-holder").innerHTML = finalPlaceHolder;
         </script>
 
 </body>
