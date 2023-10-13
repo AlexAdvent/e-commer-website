@@ -576,14 +576,24 @@
 
     .standard_dropdown ul ul {
       left: 100%;
-      top: 0 !important
+      top: 0 !important;
     }
 
     .top_bar_user {
       display: inline-block;
-      margin-left: 35px
     }
 
+    .register-btn a{
+      background-color: #0e8ce4;
+      padding: 10px;
+      border-radius: 8px;
+      color: white !important;
+    }
+    .login-btn a{
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
     .user_icon {
       display: inline-block;
       margin-right: 7px;
@@ -604,7 +614,7 @@
     }
 
     .top_bar_user div:nth-child(2) {
-      margin-right: 21px
+      margin-right: 21px;
     }
 
     .top_bar_user div:nth-child(2)::after {
@@ -917,7 +927,8 @@
     .wishlist_count {
       margin-top: -2px;
       color: #a3a3a3;
-      font-size: 14px
+      font-size: 14px;
+      text-align: center;
     }
 
     .books-row .col-6 + .col-6 {
@@ -929,8 +940,9 @@
 
     .cart_count {
       position: absolute;
-      bottom: -1px;
-      right: -14px;
+      z-index: 10;
+      bottom: -10px;
+      right: -10px;
       width: 23px;
       height: 23px;
       background: #0e8ce4;
@@ -1739,8 +1751,8 @@
                   </ul>
                 </div>
                 <div class="top_bar_user">
-                  <div><a href="signin.html">Register</a></div>
-                  <div><a href="login.html">Sign in</a></div>
+                  <div class="login-btn"><a href="login.html">Sign in</a></div>
+                  <div class="register-btn"><a href="signin.html">Register</a></div>
                 </div>
               </div>
             </div>
@@ -1784,7 +1796,8 @@
               <div class="header_search">
                 <div class="header_search_content">
                   <div class="header_search_form_container">
-                    <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                    <form action="#" class="header_search_form clearfix">
+                      <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
                       <div class="custom_dropdown" style="display: none;">
                         <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
                           <ul class="custom_list clc">
@@ -1796,7 +1809,8 @@
                             <li><a class="clc" href="#">Smartphones</a></li>
                           </ul>
                         </div>
-                      </div> <button type="submit" class="header_search_button trans_300" value="Submit"></button>
+                      </div>
+                      <button type="submit" class="header_search_button trans_300" value="Submit"><i class="fa fa-search" style="color: white; font-size: 20px"></i></button>
                     </form>
                   </div>
                 </div>
@@ -1806,7 +1820,7 @@
               <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                 <div class="wishlist d-flex flex-row align-items-center justify-content-end">
                   <div class="wishlist_content">
-                    <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                    <div class="wishlist_text"><a href="#"><i class="fa-solid fa-heart" style="font-size: 24px;"></i></a></div>
                     <div class="wishlist_count">10</div>
                   </div>
                 </div> <!-- Cart -->
@@ -1815,7 +1829,7 @@
                     <div class="cart_count"><span>3</span></div>
                   </div>
                   <div class="cart_content">
-                    <div class="cart_text"><a href="#">Cart</a></div>
+                    <div class="cart_text"><a href="#"><i class="fa fa-shopping-cart" style="font-size: 24px"></i></a></div>
                     <div class="cart_price">$185</div>
                   </div>
                 </div>
@@ -1863,19 +1877,17 @@
                     <li><a href="#">DELL<i class="fas fa-chevron-down"></i></a></li>
                   </ul>
                 </li>
-                <li class="hassubs"> <a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+                <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+                <li class="hassubs"> <a href="#">More<i class="fas fa-chevron-down"></i></a>
                   <ul>
                     <li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
                   </ul>
                 </li>
-                <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
               </ul>
             </div> <!-- Menu Trigger -->
             <div class="menu_trigger_container ml-auto">
