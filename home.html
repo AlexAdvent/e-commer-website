@@ -90,9 +90,22 @@
       width: 80px;
     }
 
+    .card{
+      padding: 20px;
+      background: rgb(241, 241, 241);
+    }
+
     .card-title {
       font-weight: 600;
     }
+
+    .text-secondary{
+      background-color: palevioletred;
+      color: white !important;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
 
     #tcon1t {
       padding-top: 10px;
@@ -152,8 +165,7 @@
     }
 
     .card-img-top {
-      height: 200px;
-
+      height: 250px;
     }
 
     .card-title {
@@ -564,14 +576,24 @@
 
     .standard_dropdown ul ul {
       left: 100%;
-      top: 0 !important
+      top: 0 !important;
     }
 
     .top_bar_user {
       display: inline-block;
-      margin-left: 35px
     }
 
+    .register-btn a{
+      background-color: #0e8ce4;
+      padding: 10px;
+      border-radius: 8px;
+      color: white !important;
+    }
+    .login-btn a{
+      padding: 10px;
+      border-radius: 8px;
+    }
+    
     .user_icon {
       display: inline-block;
       margin-right: 7px;
@@ -592,7 +614,7 @@
     }
 
     .top_bar_user div:nth-child(2) {
-      margin-right: 21px
+      margin-right: 21px;
     }
 
     .top_bar_user div:nth-child(2)::after {
@@ -905,17 +927,22 @@
     .wishlist_count {
       margin-top: -2px;
       color: #a3a3a3;
-      font-size: 14px
+      font-size: 14px;
+      text-align: center;
     }
 
     .books-row .col-6 + .col-6 {
       margin-bottom: 30px;
     }
+    .books-col{
+      margin: 20px 0;
+    }
 
     .cart_count {
       position: absolute;
-      bottom: -1px;
-      right: -14px;
+      z-index: 10;
+      bottom: -10px;
+      right: -10px;
       width: 23px;
       height: 23px;
       background: #0e8ce4;
@@ -1724,8 +1751,8 @@
                   </ul>
                 </div>
                 <div class="top_bar_user">
-                  <div><a href="signin.html">Register</a></div>
-                  <div><a href="login.html">Sign in</a></div>
+                  <div class="login-btn"><a href="login.html">Sign in</a></div>
+                  <div class="register-btn"><a href="signin.html">Register</a></div>
                 </div>
               </div>
             </div>
@@ -1769,7 +1796,8 @@
               <div class="header_search">
                 <div class="header_search_content">
                   <div class="header_search_form_container">
-                    <form action="#" class="header_search_form clearfix"> <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
+                    <form action="#" class="header_search_form clearfix">
+                      <input type="search" required="required" class="header_search_input" placeholder="Search for products...">
                       <div class="custom_dropdown" style="display: none;">
                         <div class="custom_dropdown_list"> <span class="custom_dropdown_placeholder clc">All Categories</span> <i class="fas fa-chevron-down"></i>
                           <ul class="custom_list clc">
@@ -1781,7 +1809,8 @@
                             <li><a class="clc" href="#">Smartphones</a></li>
                           </ul>
                         </div>
-                      </div> <button type="submit" class="header_search_button trans_300" value="Submit"></button>
+                      </div>
+                      <button type="submit" class="header_search_button trans_300" value="Submit"><i class="fa fa-search" style="color: white; font-size: 20px"></i></button>
                     </form>
                   </div>
                 </div>
@@ -1791,7 +1820,7 @@
               <div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                 <div class="wishlist d-flex flex-row align-items-center justify-content-end">
                   <div class="wishlist_content">
-                    <div class="wishlist_text"><a href="#">Wishlist</a></div>
+                    <div class="wishlist_text"><a href="#"><i class="fa-solid fa-heart" style="font-size: 24px;"></i></a></div>
                     <div class="wishlist_count">10</div>
                   </div>
                 </div> <!-- Cart -->
@@ -1800,7 +1829,7 @@
                     <div class="cart_count"><span>3</span></div>
                   </div>
                   <div class="cart_content">
-                    <div class="cart_text"><a href="#">Cart</a></div>
+                    <div class="cart_text"><a href="#"><i class="fa fa-shopping-cart" style="font-size: 24px"></i></a></div>
                     <div class="cart_price">$185</div>
                   </div>
                 </div>
@@ -1848,19 +1877,17 @@
                     <li><a href="#">DELL<i class="fas fa-chevron-down"></i></a></li>
                   </ul>
                 </li>
-                <li class="hassubs"> <a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+                <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+                <li class="hassubs"> <a href="#">More<i class="fas fa-chevron-down"></i></a>
                   <ul>
                     <li><a href="shop.html">Shop<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="product.html">Product<i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="blog_single.html">Blog Post<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="regular.html">Regular Post<i class="fas fa-chevron-down"></i></a></li>
                     <li><a href="cart.html">Cart<i class="fas fa-chevron-down"></i></a></li>
-                    <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
                   </ul>
                 </li>
-                <li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
               </ul>
             </div> <!-- Menu Trigger -->
             <div class="menu_trigger_container ml-auto">
@@ -1953,9 +1980,9 @@
 
   <div class="container">
     <div class="row books-row">
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://images.meesho.com/images/products/185226835/afhcq_512.webp" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
@@ -1964,13 +1991,13 @@
               <div><i class="fa fa-inr"> 300</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/Wjr6RIP62tjz0B6EVpNVlLtsu7oRNeDQkWel3k7l4yA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzkyLzA2LzU5/LzM2MF9GXzkyMDY1/OTgyX0syNFNUanNv/ZWVOdzEya3J2NlY4/bTk4Yk5tS2trS011/LmpwZw" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
@@ -1979,13 +2006,13 @@
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/Y89gGXmjx0AhUjzFQ3948wMqfs2HD30HwlC2GBETtmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzA5LzA4LzU0/LzM2MF9GXzkwODU0/ODZfRUU1aGExY05E/ZllnU2MyM3BXWExU/d2p5WDBwUDV6Vjku/anBn" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
@@ -1994,13 +2021,13 @@
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/Iydxoy-1X4DlnY-exZsgr015yD_U5swv6T0uGEhODHE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg1/MTIzMDk4L3Bob3Rv/L2Npbm5hbW9uLXN0/aWNrcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9UTktVjhP/akM0ZjdaQV95cWt6/Q1F5SFlCNFZ4SHFs/NmZhV3hXQTlnZlJz/RT0" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
@@ -2009,43 +2036,43 @@
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/ylqq97FUtguDMIEHn1C72bc6-rxEc-NJi7T-WnNOquQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzM4Lzk5LzI1/LzM2MF9GXzUzODk5/MjU4Ml8zN1NBSjJ2/S0t0Z0NzMW03OVBR/RmlnWFhoOGNxaE5n/ay5qcGc" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
             <div class="card-title">
-              <h5>Donut</h5>
+              <h5>Donuts</h5>
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/gNY0dUDIYFS3X8qFlPjgjLEuj7FYFd2q--KV6SMVB4k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcx/MjI0NDY5L3Bob3Rv/L2NhbnZhcy1zaG9l/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9b0Q1QTYxeHhn/bmEtMFdOYWZOY1p4/eVNTd0NpRW5VQ3M1/d2lESlZmYjJ0UT0" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
             <div class="card-title">
-              <h5>Estates</h5>
-              <div><i class="fa fa-inr"> 50</i></div>
+              <h5>Sneakers</h5>
+              <div><i class="fa fa-inr"> 3500</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/24rVOlfbKwIKvn9fKX0BS3liolW1HhlHLAUR3QnrhIE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvTFMw/MTYwODkvcGhvdG8v/Ym94LWZhbi5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9elV1/aW5xQS1mUWJqcEdi/VUpNWEtCVkpKMzBC/SEdOMU1GbUtlTGct/SzVfbz0" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
@@ -2054,13 +2081,13 @@
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/eaR6crGF7oy1T-WxfoLzXYCfUHiEB2tdJVZN4avisEA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA0/NzIxMzc2Mi9waG90/by9nb3JpbGxhLXBv/cnRyYWl0LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1VTU9r/NEVBSnFnTDY5QjlZ/NUc2M3lZSXNsd1RY/LXJDTlhoZlNNTHlu/eXM0PQ" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
@@ -2069,59 +2096,59 @@
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/T_AfdQUgHPDOpX_2YVafEDvCIDeC7sSaZqcVkI7xlko/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL3ZhZGVyLXBy/b2QuczMuYW1hem9u/YXdzLmNvbS8xNjc0/NjgyMzgyLTE2NzQ2/ODIzNDYtaG1nb2Vw/cHJvZC0xNjc0Njgy/Mzc3LmpwZz9jcm9w/PTF4dzoxeGg7Y2Vu/dGVyLHRvcCZyZXNp/emU9OTgwOio" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
             <div class="card-title">
-              <h5>HelloWorld</h5>
-              <div><i class="fa fa-inr"> 50</i></div>
+              <h5>Bomber Jacket</h5>
+              <div><i class="fa fa-inr"> 2000</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/gDUJNLKv3oPUsVL33eltaUYcJ9moDkZYaGxTmHxml8c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE3/MTk1NDcyNS9waG90/by9ibGFjay1hbmQt/Z29sZC1mZW1hbGUt/c3VuZ2xhc3Nlcy1j/bG9zZXVwLWlzb2xh/dGVkLW9uLXdoaXRl/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1DYnF3QUkyMlE4/MTF6STlZTlJtUV8y/UlhSVWoyZmtoYXhx/b3FrN1dXeXhnPQ" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
             <div class="card-title">
-              <h5>Italy</h5>
+              <h5>Sunglasses</h5>
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/cmzmrGl5diDWZjbji228fTtE-WAokxa_Qj0KCDhM1y8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY3/NzU5NjAzL3Bob3Rv/L2JhY2twYWNrLXdp/dGgtZ3JleS1hbmQt/Ymx1ZS1jb2xvcnMu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PW5rbG96SmJZTGNs/RHk1SjZlLW4tdGh1/bWdDelQxZWVRM2RY/Y2UzYk0tdWc9" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
   </div>  -->
             <div class="card-title">
-              <h5>Errorlrtrtress</h5>
+              <h5>Backpack</h5>
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
 
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/fQXa6tD2ifFyg5pXOZB-uq0Oe5eS4cueohAnbly6fus/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFtSFJKZ3B6QUwu/anBn" alt="Card image cap">
           <div class="card-body">
             <!--  <h5 class="card-title">Errorless</h5>
       </div>  -->
@@ -2130,36 +2157,34 @@
               <div><i class="fa fa-inr"> 50</i></div>
             </div>
 
-            <span class="text-secondary">pune</span>
+            <span class="text-secondary">prime+</span>
           </div>
         </div>
       </div>
 
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="here is image">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/eaI_ugQOYPsKKKkZhleFzpMWrjd5xoekaruStJphJx8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzUxLzkzLzk0/LzM2MF9GXzM1MTkz/OTQxMl9RSmliejRY/dWNVbE15alBNTW9l/ekhyd0VDSzlQMEJs/SC5qcGc" alt="here is image">
             <div class="card-body">
               <!--  <h5 class="card-title">Errorless</h5>
     </div>  -->
               <div class="card-title">
-                <h5>hghg</h5>
-                <div><i class="fa fa-inr">456</i></div>
+                <h5>Mouse</h5>
+                <div><i class="fa fa-inr"> 456</i></div>
               </div>
-              <span class="text-secondary">pune</span>
+              <span class="text-secondary">prime+</span>
             </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 books-col">
         <div class="card">
-          <img class="card-img-top mx-auto d-block" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="here is image">
+          <img class="card-img-top mx-auto d-block" src="https://imgs.search.brave.com/F1j0tVTDkp6JCiNIrKBBVnKxwLcpLck8Md8C_RWqjb8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTcx/NTg1MzkxL3Bob3Rv/L3dhdGNoLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1PdnFf/SFJ1dmk2XzNrR1R3/QWVJQVdPQ2k5dFlQ/MlRtbUY1bkdSeWtr/anFFPQ" alt="here is image">
             <div class="card-body">
-              <!--  <h5 class="card-title">Errorless</h5>
-    </div>  -->
               <div class="card-title">
-                <h5>snnam</h5>
-                <div><i class="fa fa-inr">584</i></div>
+                <h5>Wristwatch</h5>
+                <div><i class="fa fa-inr"> 7800</i></div>
               </div>
-              <span class="text-secondary">pune</span>
+              <span class="text-secondary">prime+</span>
             </div>
         </div>
       </div>
